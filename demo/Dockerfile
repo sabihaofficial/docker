@@ -1,4 +1,4 @@
-FROM eclipse-temurin:11-jdk-jammy
+FROM tomcat:10.1.0-M17-jdk11-temurin-jammy
 
 MAINTAINER Sabiha "sabiha.chougle5@gmail.com"
 
