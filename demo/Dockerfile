@@ -1,4 +1,4 @@
-FROM tomcat:8.5.47-jdk8-openjdk
+FROM eclipse-temurin:11-jdk-jammy
 
 MAINTAINER Sabiha "sabiha.chougle5@gmail.com"
 
