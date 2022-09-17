@@ -1,4 +1,4 @@
-FROM tomcat:10.1.0-M17-jdk11-temurin-jammy
+FROM openjdk:20-ea-14-jdk-oraclelinux8
 
 MAINTAINER Sabiha "sabiha.chougle5@gmail.com"
 
@@ -6,6 +6,6 @@ EXPOSE 8080
 
 RUN rm -rf ./webapps/*
 
-COPY target/demo-0.0.1-SNAPSHOT.war /usr/local/tomcat/webapps/ROOT.war
+COPY target/demo-0.0.1-SNAPSHOT.war /usr/local/bin/webapp.jar
 
-CMD ["catalina.sh", "run"]
+CMD ["java", "-jar", "webapp.jar"]
