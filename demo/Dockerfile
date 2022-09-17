@@ -1,4 +1,4 @@
-FROM openjdk:20-ea-14-jdk-oraclelinux8
+FROM openjdk:11.0
 
 MAINTAINER Sabiha "sabiha.chougle5@gmail.com"
 
