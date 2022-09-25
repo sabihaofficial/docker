@@ -50,7 +50,7 @@
                 <version>0.40.2</version>
 
                 <configuration>
-                    <dockerHost>http://localhost:2375</dockerHost>
+                    <dockerHost>http://172.17.0.1:2375</dockerHost>
                     <!--  this is for Mac and Amazon Linux -->
 <!--                    <dockerHost>unix:///var/run/docker.sock</dockerHost>-->
 
@@ -79,6 +79,11 @@
                         </image>
                     </images>
                 </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>3.1.0</version>
             </plugin>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
