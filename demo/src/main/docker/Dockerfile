@@ -8,4 +8,4 @@ EXPOSE 8080
 
 COPY target/demo-0.0.1-SNAPSHOT.jar webapp.jar
 
-CMD ["java", "-jar", "webapp.jar"]
+ENTRYPOINT ["java" "-jar", "webapp.jar"]
