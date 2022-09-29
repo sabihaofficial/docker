@@ -6,6 +6,6 @@ WORKDIR /usr/local/bin/
 
 EXPOSE 8080
 
-COPY maven/demo-0.0.1-SNAPSHOT.jar webapp.jar
+COPY target/demo-0.0.1-SNAPSHOT.jar webapp.jar
 
 CMD ["java", "-jar", "webapp.jar"]
