@@ -12,7 +12,7 @@ services:
       - database
 
   database:
-    image: mysql
+    image: techvakeelm32/my-sql
     networks:
       - my-network
     environment:
