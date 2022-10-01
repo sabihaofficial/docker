@@ -11,7 +11,7 @@ services:
 
   database:
     image: mysql
-    network:
+    networks:
       - my-network
     environment:
       - MYSQL_ROOT_PASSWORD=admin123
