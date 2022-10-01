@@ -1,24 +1,25 @@
-version : "3"
+version: "3"
 
 services:
-  demo :
-    image : demo:latest
-    networks :
+
+  demo:
+    image: demo:latest
+    networks:
       - my-network
-    ports :
+    ports:
       - 8080:8080
-    depends_on :
+    depends_on:
       - database
 
-  database :
-    image : mysql
-    network :
+  database:
+    image: mysql
+    network:
       - my-network
-    environment :
+    environment:
       - MYSQL_ROOT_PASSWORD=admin123
       - MYSQL_DATABASE=demo
-networks :
-  my-network :
+networks:
+  my-network:
 
 
 
