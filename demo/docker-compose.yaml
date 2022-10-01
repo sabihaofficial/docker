@@ -1,4 +1,4 @@
-version: "2"
+version: "3"
 
 services:
 
@@ -12,7 +12,7 @@ services:
       - database
 
   database:
-    image: mysql
+    image: mysql:5
     network:
       - my-network
     environment:
